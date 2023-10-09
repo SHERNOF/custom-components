@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import ABox from "./components/animatedBorder/AnimatedBorder";
+import ANav from "./components/animatedNavbar/AnimatedNavBar";
+import Box from "./components/box/Box";
+import Deck1 from "./components/deck1/Deck1";
+import GlowingIcons from "./components/glowingIcons/GlowingIcons";
+import RotatingText from "./components/rotating text/RotatingText";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+    <>
+      <Box className="App">
+        <p style={{ padding: "1rem", color: "white", textAlign: "center" }}>
+          JESUS IS LORD
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      </Box>
+      <ANav />
+      <Deck1 />
+      <GlowingIcons />
+    </>
   );
 }
 
